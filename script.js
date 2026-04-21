@@ -1,17 +1,14 @@
 function login() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    const message = document.getElementById("message");
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
 
-    // Dummy credentials
-    const correctUser = "admin";
-    const correctPass = "1234";
-
-    if (username === correctUser && password === correctPass) {
-        message.style.color = "green";
-        message.textContent = "Login Successful!";
+    if (user === "" || pass === "") {
+        alert("Please fill all fields");
     } else {
-        message.style.color = "red";
-        message.textContent = "Invalid Username or Password";
+        alert("Login Successful (Demo)");
     }
+}
+
+function goToRegister() {
+    window.location.href = "register.html";
 }

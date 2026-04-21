@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="login-container">
-    <h2>Log-in</h2>
-    <h1>Hello from CI/CD 🚀</h1>
-    <h2>hello from ubuntu </h2>
+<div class="container">
+    <h2>Login</h2>
+
     <input type="text" id="username" placeholder="Username">
     <input type="password" id="password" placeholder="Password">
-    
+
     <button onclick="login()">Login</button>
 
-    <p id="message"></p>
+    <p>Don't have an account?</p>
+    <button onclick="goToRegister()">Register</button>
 </div>
 
 <script src="script.js"></script>
